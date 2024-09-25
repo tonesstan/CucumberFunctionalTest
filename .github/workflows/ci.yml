@@ -28,5 +28,8 @@ jobs:
           java-version: 22
           distribution: 'temurin'
 
+      - name: Build
+        run: mvn clean install -DskipTests
+
       - name: Run tests
         run: mvn test
